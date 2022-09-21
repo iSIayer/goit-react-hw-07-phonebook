@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { getItemsValue, addItem } from 'redux/contacts';
+import { getItemsValue, addItem } from 'redux/filter';
 import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
 import { Formik, ErrorMessage } from 'formik';

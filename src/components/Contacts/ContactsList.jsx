@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { deleteItem, getItemsValue, getFilterValue } from 'redux/contacts';
+import { deleteItem, getItemsValue, getFilterValue } from 'redux/filter';
 import PropTypes from 'prop-types';
 import {
   ContactsListItem,

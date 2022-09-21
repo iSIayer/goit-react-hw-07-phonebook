@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { getFilterValue, filterItems } from 'redux/contacts';
+import { getFilterValue, filterItems } from 'redux/filter';
 import PropTypes from 'prop-types';
 import { Input } from './Filter.styled';
 
