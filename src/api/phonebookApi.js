@@ -29,4 +29,8 @@ export const phonebookApi = createApi({
   }),
 });
 
-export const { useGetContactByNameQuery } = phonebookApi;
+export const {
+  useGetContactByNameQuery,
+  useAddContactMutation,
+  useDeleteContactMutation,
+} = phonebookApi;
