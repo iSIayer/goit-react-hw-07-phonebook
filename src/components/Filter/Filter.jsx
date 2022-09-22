@@ -1,10 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { getFilterValue, filterItems } from 'redux/filter';
+import { filterItems } from 'redux/filter';
 import PropTypes from 'prop-types';
 import { Input } from './Filter.styled';
 
 export const Filter = () => {
-  const filter = useSelector(getFilterValue);
+  const filter = useSelector(state => state.filter.value);
   const dispatch = useDispatch();
 
   const handleItemsFilter = e => {
@@ -20,18 +20,6 @@ export const Filter = () => {
     />
   );
 };
-
-// export const Filter = ({ value, onChange }) => {
-//   return (
-//     <Input
-//       placeholder="Type name..."
-//       type="text"
-//       name="name"
-//       onChange={onChange}
-//       value={value}
-//     />
-//   );
-// };
 
 Filter.propTypes = {
   value: PropTypes.string.isRequired,
