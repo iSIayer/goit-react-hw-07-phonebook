@@ -9,7 +9,7 @@ import {
   ContactsListButton,
   ContactsListIcon,
 } from './ContactsList.styled';
-import { Spinner } from 'components/Spinner/Spinner';
+import { Loader } from 'components/Spinner/Loader';
 
 export const ContactsList = () => {
   const filter = useSelector(state => state.filter.value);
@@ -28,7 +28,7 @@ export const ContactsList = () => {
 
   return (
     <>
-      {isLoading && <Spinner />}
+      {isLoading && <Loader />}
       <ul>
         {items &&
           dataFilter().map(({ id, name, phone }) => {
